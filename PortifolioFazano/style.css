@@ -141,7 +141,7 @@ section h1 {
     margin-bottom: 30px;
 }
 
-.habilidade {}
+
 
 .titulo-habilidade {
     height: 200px;
@@ -655,5 +655,375 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: #2A1D1A;
+    padding: 50px 20px 0;
+    text-align: center;
+    border-top: 3px solid #664A45;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #664A45;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #EC5B13;
+    border-color: #EC5B13;
+    transform: translateY(-5px);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #EC5B13;
+}
+
+.footer-bottom {
+    background: #1f1513;
+    border-top: 1px solid #664A45;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-bottom p:hover {
+    color: #EC5B13;
+}
+
+/* ================================= */
+/* RESPONSIVIDADE GERAL */
+/* ================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: auto;
+    min-height: 100px;
+}
+
+section {
+    width: 100%;
+}
+
+/* ================================= */
+/* DESKTOP GRANDE */
+/* ================================= */
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.status-fazano {
+    gap: 40px;
+}
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width: 1024px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 220px;
+    }
+
+    .texto {
+        max-width: 90%;
+    }
+
+    .texto h1 {
+        font-size: 70px;
+    }
+
+    .texto h2 {
+        font-size: 35px;
+    }
+
+    .texto p {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .foto img {
+        width: 400px;
+    }
+
+    .titulo-sobre-min,
+    .titulo-projetos,
+    .titulo-habilidade,
+    .titulo-formacao,
+    .titulo-curriculo {
+        font-size: 50px;
+    }
+
+    .sobremin {
+        gap: 30px;
+    }
+
+    .descricao {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        font-size: 22px;
+        padding: 25px;
+    }
+
+    .img-move2 {
+        width: 400px;
+    }
+
+    .status-fazano {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-formacao {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .img-formacao {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-senai {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-fazano-senai img {
+        width: 350px;
+    }
+
+    .curriculo-box {
+        width: 95%;
+    }
+}
+
+/* ================================= */
+/* CELULAR */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 80px 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .status {
+        width: 90%;
+        max-width: 320px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .inicio {
+        padding-top: 250px;
+    }
+
+    .texto h1 {
+        font-size: 48px;
+    }
+
+    .texto h2 {
+        font-size: 24px;
+    }
+
+    .texto p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .foto img {
+        width: 280px;
+    }
+
+    .titulo-sobre-min,
+    .titulo-projetos,
+    .titulo-habilidade,
+    .titulo-formacao,
+    .titulo-curriculo {
+        font-size: 35px;
+    }
+
+    .img-move2 {
+        width: 280px;
+    }
+
+    .descricao {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .skillJava,
+    .skillPython,
+    .skillHtml,
+    .skillCss,
+    .skillJavaScrip,
+    .skillSql {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .card-projeto {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-img {
+        height: 220px;
+    }
+
+    .card-info {
+        height: auto;
+    }
+
+    .img-formacao {
+        width: 100%;
+    }
+
+    .curriculo-box {
+        width: 100%;
+        height: 450px;
+    }
+
+    .acoes-curriculo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* ================================= */
+/* CELULAR PEQUENO */
+/* ================================= */
+
+@media (max-width: 480px) {
+
+    .inicio {
+        padding-top: 280px;
+    }
+
+    .texto h1 {
+        font-size: 38px;
+    }
+
+    .texto h2 {
+        font-size: 20px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .titulo-sobre-min,
+    .titulo-projetos,
+    .titulo-habilidade,
+    .titulo-formacao,
+    .titulo-curriculo {
+        font-size: 28px;
+    }
+
+    .curriculo-box {
+        height: 320px;
+    }
+
+    .status {
+        font-size: 10px;
+    }
+
+    .foto img {
+        width: 230px;
     }
 }
