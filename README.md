@@ -178,4 +178,4 @@ Desenvolvedor Full Stack em formação
 
 ⭐ Se este projeto te inspirou, deixe uma estrela no repositório!
 
-</div>`}
+</div>
