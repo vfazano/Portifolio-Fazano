@@ -4,7 +4,7 @@ Meu site pessoal desenvolvido para apresentar meus projetos, habilidades e traje
 
 ## 📷 Preview do Projeto
 
-![Preview do Projeto](./preview.png)
+![Preview do Projeto](./preview0.png)
 
 📌 Sobre o Projeto
 
