@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,8 @@
     <meta property="og:description" content="Portfólio de projetos, habilidades e currículo de Vitor Fazano.">
     <meta property="og:type" content="website">
     <title>Vitor Fazano | Software Developer</title>
- 
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="icon" type="image/png" href="img/codigo (1).png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,18 +21,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <body>
     <!-- barra de progresso de rolagem -->
     <div class="scroll-progress" id="scrollProgress"></div>
- 
+
     <header id="header">
         <nav class="nav container">
             <a href="#inicio" class="logo" aria-label="Início">
-                <span class="logo-mark">&lt;/&gt;</span>
+                <span class="logo-mark"><img src="img/codigo (1).png" alt="Logo Vitor Fazano"></span>
                 <span class="logo-text">Vitor<strong>Fazano</strong></span>
             </a>
- 
+
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio" class="nav-link active">Início</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
@@ -42,7 +42,7 @@
                 <li><a href="#curriculo" class="nav-link">Currículo</a></li>
                 <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
- 
+
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
                     <i class="fa-solid fa-moon"></i>
@@ -53,13 +53,13 @@
             </div>
         </nav>
     </header>
- 
+
     <main>
         <!-- ============ INÍCIO ============ -->
         <section id="inicio" class="inicio">
             <div class="blob blob-1"></div>
             <div class="blob blob-2"></div>
- 
+
             <div class="container inicio-grid">
                 <div class="texto">
                     <span class="status" data-reveal>
@@ -74,7 +74,7 @@
                         Estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior,
                         apaixonado por tecnologia e desenvolvimento de software.
                     </p>
- 
+
                     <div class="hero-btns" data-reveal>
                         <a href="#projetos" class="btn btn-primary">
                             <i class="fa-solid fa-rocket"></i> Ver projetos
@@ -83,7 +83,7 @@
                             <i class="fa-solid fa-download"></i> Baixar CV
                         </a>
                     </div>
- 
+
                     <div class="hero-social" data-reveal>
                         <a href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener"
                             aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -93,29 +93,29 @@
                                 class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
- 
+
                 <div class="foto" data-reveal>
                     <div class="foto-glow"></div>
-                    <img class="img-move" src="img/perfil.svg" alt="Ilustração de Vitor Fazano">
+                    <img class="img-move" src="img/Desenho_Fazanosf.png" alt="Ilustração de Vitor Fazano">
                 </div>
             </div>
- 
+
             <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
         </section>
- 
+
         <!-- ============ SOBRE ============ -->
         <section id="sobre" class="sobre section">
             <div class="container">
                 <p class="section-tag" data-reveal>01 — Sobre</p>
                 <h2 class="section-title" data-reveal>Quem é o <span>Vitor</span></h2>
- 
+
                 <div class="sobre-grid">
                     <div class="img-sobre" data-reveal>
-                        <img class="img-move2" src="img/sobre.svg" alt="Ilustração de Vitor programando">
+                        <img class="img-move2" src="img/desenho_fazano2.png" alt="Ilustração de Vitor programando" loading="lazy">
                     </div>
- 
+
                     <div class="sobre-conteudo" data-reveal>
                         <p class="descricao">
                             Meu nome é <strong>Vitor Fazano</strong> e atualmente curso Análise e Desenvolvimento de
@@ -124,7 +124,7 @@
                             Busco uma oportunidade de estágio para aplicar meus conhecimentos, ganhar experiência
                             prática e evoluir como desenvolvedor.
                         </p>
- 
+
                         <div class="info-cards">
                             <div class="info-card">
                                 <i class="fa-solid fa-briefcase"></i>
@@ -147,7 +147,7 @@
                                 <p>Português / Inglês básico</p>
                             </div>
                         </div>
- 
+
                         <div class="stats">
                             <div class="stat"><span class="stat-num" data-count="6">0</span><small>tecnologias</small>
                             </div>
@@ -160,23 +160,23 @@
                 </div>
             </div>
         </section>
- 
+
         <!-- ============ PROJETOS ============ -->
         <section id="projetos" class="projetos section">
             <div class="container">
                 <p class="section-tag" data-reveal>02 — Portfólio</p>
                 <h2 class="section-title" data-reveal>Meus <span>Projetos</span></h2>
- 
+
                 <div class="filtros" data-reveal>
                     <button class="filtro ativo" data-filtro="todos">Todos</button>
                     <button class="filtro" data-filtro="web">Web</button>
                     <button class="filtro" data-filtro="java">Java</button>
                     <button class="filtro" data-filtro="python">Python</button>
                 </div>
- 
+
                 <div class="container-projetos" id="gridProjetos">
                     <article class="card-projeto" data-cat="web" data-reveal>
-                        <div class="card-img" style="background-image:url('img/projeto-1.svg')">
+                        <div class="card-img" style="background-image:url('img/foto_portifolio.png')">
                             <span class="card-badge">Web</span>
                         </div>
                         <div class="card-info">
@@ -185,16 +185,16 @@
                                 animações ao rolar e layout mobile-first.</p>
                             <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
                             <div class="botoes">
-                                <a href="#" class="btn-card github" target="_blank" rel="noopener"><i
-                                        class="fa-brands fa-github"></i> Código</a>
+                                <a href="https://github.com/vfazano/Portifolio-Fazano" class="btn-card github"
+                                    target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
                                 <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
                                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </div>
                     </article>
- 
+
                     <article class="card-projeto" data-cat="java" data-reveal>
-                        <div class="card-img" style="background-image:url('img/projeto-2.svg')">
+                        <div class="card-img" style="background-image:url('img/foto_java.png')">
                             <span class="card-badge">Java</span>
                         </div>
                         <div class="card-info">
@@ -210,9 +210,27 @@
                             </div>
                         </div>
                     </article>
- 
+
+                    <article class="card-projeto" data-cat="web" data-reveal>
+                        <div class="card-img" style="background-image:url('img/jogo_web.png')">
+                            <span class="card-badge">Web</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Jogo Web</h3>
+                            <p>Jogo feito para o navegador com HTML, CSS e JavaScript, trabalhando manipulação do DOM,
+                                eventos de teclado e lógica de pontuação.</p>
+                            <div class="tags"><span>JavaScript</span><span>DOM</span><span>Canvas</span></div>
+                            <div class="botoes">
+                                <a href="#" class="btn-card github" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
                     <article class="card-projeto" data-cat="python" data-reveal>
-                        <div class="card-img" style="background-image:url('img/projeto-3.svg')">
+                        <div class="card-img" style="background-image:url('img/projeto-python.svg')">
                             <span class="card-badge">Python</span>
                         </div>
                         <div class="card-info">
@@ -228,62 +246,44 @@
                             </div>
                         </div>
                     </article>
- 
-                    <article class="card-projeto" data-cat="web" data-reveal>
-                        <div class="card-img" style="background-image:url('img/projeto-4.svg')">
-                            <span class="card-badge">Web</span>
-                        </div>
-                        <div class="card-info">
-                            <h3>Landing Page Responsiva</h3>
-                            <p>Página de apresentação de produto com layout em grid, componentes reutilizáveis e
-                                otimização para diferentes tamanhos de tela.</p>
-                            <div class="tags"><span>HTML</span><span>CSS</span><span>Flexbox</span></div>
-                            <div class="botoes">
-                                <a href="#" class="btn-card github" target="_blank" rel="noopener"><i
-                                        class="fa-brands fa-github"></i> Código</a>
-                                <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
-                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
- 
+
         <!-- ============ HABILIDADES ============ -->
         <section id="habilidades" class="habilidades section">
             <div class="container">
                 <p class="section-tag" data-reveal>03 — Stack</p>
                 <h2 class="section-title" data-reveal>Minhas <span>Habilidades</span></h2>
- 
+
                 <div class="skills">
                     <div class="skill" data-reveal style="--skill:#f89820">
-                        <i class="fa-brands fa-java"></i>
+                        <img src="img/java.png" alt="Java" loading="lazy">
                         <h4>Java</h4>
                         <div class="bar"><span data-level="70"></span></div>
                     </div>
                     <div class="skill" data-reveal style="--skill:#4b8bbe">
-                        <i class="fa-brands fa-python"></i>
+                        <img src="img/python (1).png" alt="Python" loading="lazy">
                         <h4>Python</h4>
                         <div class="bar"><span data-level="65"></span></div>
                     </div>
                     <div class="skill" data-reveal style="--skill:#e34f26">
-                        <i class="fa-brands fa-html5"></i>
+                        <img src="img/html-5.png" alt="HTML5" loading="lazy">
                         <h4>HTML5</h4>
                         <div class="bar"><span data-level="90"></span></div>
                     </div>
                     <div class="skill" data-reveal style="--skill:#2965f1">
-                        <i class="fa-brands fa-css3-alt"></i>
+                        <img src="img/css-3 (1).png" alt="CSS3" loading="lazy">
                         <h4>CSS3</h4>
                         <div class="bar"><span data-level="85"></span></div>
                     </div>
                     <div class="skill" data-reveal style="--skill:#f0db4f">
-                        <i class="fa-brands fa-js"></i>
+                        <img src="img/java-script.png" alt="JavaScript" loading="lazy">
                         <h4>JavaScript</h4>
                         <div class="bar"><span data-level="70"></span></div>
                     </div>
                     <div class="skill" data-reveal style="--skill:#00758f">
-                        <i class="fa-solid fa-database"></i>
+                        <img src="img/sql-server.png" alt="SQL" loading="lazy">
                         <h4>SQL</h4>
                         <div class="bar"><span data-level="75"></span></div>
                     </div>
@@ -300,13 +300,13 @@
                 </div>
             </div>
         </section>
- 
+
         <!-- ============ FORMAÇÃO ============ -->
         <section id="formacao" class="formacao section">
             <div class="container">
                 <p class="section-tag" data-reveal>04 — Trajetória</p>
                 <h2 class="section-title" data-reveal>Minha <span>Formação</span></h2>
- 
+
                 <div class="timeline">
                     <div class="timeline-item" data-reveal>
                         <div class="timeline-dot"></div>
@@ -318,7 +318,7 @@
                                 e engenharia de software.</p>
                         </div>
                     </div>
- 
+
                     <div class="timeline-item" data-reveal>
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
@@ -329,7 +329,7 @@
                                 com Git.</p>
                         </div>
                     </div>
- 
+
                     <div class="timeline-item" data-reveal>
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
@@ -340,25 +340,27 @@
                         </div>
                     </div>
                 </div>
- 
+
                 <div class="formacao-img" data-reveal>
-                    <img src="img/senai.svg" alt="SENAI Gaspar Ricardo Júnior">
+                    <img src="img/Entrada do SENAI em dia claro.png" alt="SENAI Gaspar Ricardo Júnior" loading="lazy">
+                    <img class="formacao-aluno" src="img/Jovem_sorrindo_com_uniforme_SENAI-removebg-preview.png"
+                        alt="Vitor com o uniforme do SENAI" loading="lazy">
                 </div>
             </div>
         </section>
- 
+
         <!-- ============ CURRÍCULO ============ -->
         <section id="curriculo" class="curriculo section">
             <div class="container">
                 <p class="section-tag" data-reveal>05 — Currículo</p>
                 <h2 class="section-title" data-reveal>Meu <span>Currículo</span></h2>
- 
+
                 <div class="curriculo-container">
                     <div class="curriculo-box" data-reveal>
                         <iframe src="curriculo/curriculo-vitor-fazano.pdf" title="Currículo de Vitor Fazano"
                             loading="lazy"></iframe>
                     </div>
- 
+
                     <div class="acoes-curriculo" data-reveal>
                         <a href="curriculo/curriculo-vitor-fazano.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
                             <i class="fa-solid fa-expand"></i> Tela cheia
@@ -370,14 +372,14 @@
                 </div>
             </div>
         </section>
- 
+
         <!-- ============ CONTATO ============ -->
         <section id="contato" class="contato section">
             <div class="container">
                 <p class="section-tag" data-reveal>06 — Contato</p>
                 <h2 class="section-title" data-reveal>Vamos <span>conversar?</span></h2>
                 <p class="section-sub" data-reveal>Estou disponível para estágio e aberto a novos desafios.</p>
- 
+
                 <div class="contato-grid">
                     <div class="contato-info" data-reveal>
                         <a class="contato-item" href="mailto:vfazano09032007@gmail.com">
@@ -398,7 +400,7 @@
                             <div><h4>Localização</h4><p>Sorocaba — SP, Brasil</p></div>
                         </div>
                     </div>
- 
+
                     <form class="contato-form" id="contatoForm" novalidate data-reveal>
                         <div class="campo">
                             <label for="nome">Nome</label>
@@ -425,15 +427,15 @@
             </div>
         </section>
     </main>
- 
+
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
                 <a href="#inicio" class="logo">
-                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span class="logo-mark"><img src="img/codigo (1).png" alt="Logo Vitor Fazano"></span>
                     <span class="logo-text">Vitor<strong>Fazano</strong></span>
                 </a>
- 
+
                 <nav class="footer-menu">
                     <a href="#inicio">Início</a>
                     <a href="#sobre">Sobre</a>
@@ -442,7 +444,7 @@
                     <a href="#curriculo">Currículo</a>
                     <a href="#contato">Contato</a>
                 </nav>
- 
+
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener"
                         aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -452,18 +454,18 @@
                             class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
- 
+
             <div class="footer-bottom">
                 <p>© <span id="ano"></span> Vitor Fazano. Feito com <i class="fa-solid fa-heart"></i> e muito café.</p>
             </div>
         </div>
     </footer>
- 
+
     <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
- 
+
     <script src="script.js"></script>
 </body>
- 
+
 </html>
