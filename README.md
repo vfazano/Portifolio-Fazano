@@ -4,7 +4,7 @@
 
 ### Desenvolvedor Full Stack • Vitor Fazano
 
-<img src="./assets/preview0.png" alt="Preview do Portfólio" width="100%" />
+<img src="./preview0.png" alt="Preview do Portfólio" width="100%" />
 
 <br>
 
