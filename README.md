@@ -86,17 +86,21 @@ index.html
 
 📞 Contato → Informações para contato
 
+✅ Concluído
+
+📱 Layout totalmente responsivo (desktop, tablet e celular)
+
+🎨 Design/UI repaginado (tema claro/escuro, animações ao rolar, timeline)
+
+⚡ Interações com JavaScript (menu mobile, filtro de projetos, efeito de digitação)
+
+📩 Formulário de contato com validação
+
 🚀 Melhorias Futuras
 
-📱 Tornar totalmente responsivo (mobile)
-
-🎨 Melhorar ainda mais o design/UI
-
-⚡ Adicionar interações com JavaScript
-
-📩 Criar formulário de contato funcional
-
 🌍 Publicar online (GitHub Pages / Vercel)
+
+🔗 Preencher os links reais de cada projeto
 
 👨‍💻 Autor
 

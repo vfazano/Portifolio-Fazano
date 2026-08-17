@@ -1,295 +1,471 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio | Vitor Fazano</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Vitor Fazano — Desenvolvedor de Software e estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior.">
+    <meta name="author" content="Vitor Fazano">
+    <meta property="og:title" content="Vitor Fazano | Software Developer">
+    <meta property="og:description" content="Portfólio de projetos, habilidades e currículo de Vitor Fazano.">
+    <meta property="og:type" content="website">
+    <title>Vitor Fazano | Software Developer</title>
+
+    <link rel="icon" type="image/png" href="img/codigo (1).png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Ceviche+One&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..800&family=Roboto+Mono:wght@400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- barra de progresso de rolagem -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <header>
-        <nav>
+    <header id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="logo" aria-label="Início">
+                <span class="logo-mark"><img src="img/codigo (1).png" alt="Logo Vitor Fazano"></span>
+                <span class="logo-text">Vitor<strong>Fazano</strong></span>
+            </a>
 
-            <div class="logo">
-                <a href="#inicio"><img src="img/codigo (1).png" alt="logo"></a>
-            </div>
-            <div class="status">
-                BUSCANDO PRIMEIRA OPORTUNIDADE
-            </div>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#curriculo">Curriculo</a></li>
-                <li><a href="#contato">Contato</a></li>
-
-
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#curriculo" class="nav-link">Currículo</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
+    <main>
+        <!-- ============ INÍCIO ============ -->
+        <section id="inicio" class="inicio">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
 
-    <section id="inicio" class="inicio">
-
-        <div class="texto">
-
-
-            <h3>BEM VINDO AO MEU WORKSPACE</h3>
-            <h1>Vitor <span class="sobrenome">Fazano</span></h1>
-            <h2>Software Developer</h2>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior, apaixonado por tecnologia e desenvolvimentode software.
-            </p>
-
-            <a target="_blank" href="https://www.linkedin.com/in/vitorfazan0/"><button>LinkedIn</button></a>
-
-        </div>
-        <div class="foto">
-            <img class="img-move" src="img/Desenho_Fazanosf.png" alt="img-fazano">
-        </div>
-
-    </section>
-
-    <section class="sobre" id="sobre">
-
-        <h1 class="titulo-sobre-min">Quem é o <span class="sobrenome"> Vitor</span></h1>
-
-        <div class="sobremin">
-            <div class="img-sobre">
-                <img class="img-move2" src="img/desenho_fazano2.png" alt="Imagem de Vitor Fazano">
-            </div>
-
-            <div class="descricao">
-                <p>
-                    Meu nome é Vitor Fazano e atualmente estou cursando Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior. Estou em processo de aprendizado na área de programação, desenvolvendo habilidades em Java, Python, HTML, CSS, JavaScript e SQL.
-                    Busco uma oportunidade de estágio para aplicar meus conhecimentos, ganhar experiência prática e evoluir como desenvolvedor.
-                </p>
-
-
-            </div>
-            <div class=" status-fazano">
-                <div class="status-sobre">
-                    <h3> STATUS</h3>
-                    <p>Buscando Estagio</p>
-
-                </div>
-                <div class="Localizacao">
-                    <h3>LOCALIZALÇÃO</h3>
-                    <P>Brasil</P>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-
-
-
-    <section class="projetos">
-
-        <h1 class="titulo-projetos">Meus <span>Projetos</span></h1>
-
-
-
-        <div class="container-projetos">
-
-            <div class="card-projeto">
-                <div class="card-img"></div>
-
-                <div class="card-info">
-                    <h3>Nome do Projeto</h3>
-                    <p>
-                        Pequena descrição do seu projeto. Fale o que ele faz, tecnologias usadas e objetivo.
+            <div class="container inicio-grid">
+                <div class="texto">
+                    <span class="status" data-reveal>
+                        <span class="status-dot"></span> BUSCANDO PRIMEIRA OPORTUNIDADE
+                    </span>
+                    <h3 data-reveal>BEM-VINDO AO MEU WORKSPACE</h3>
+                    <h1 data-reveal>Vitor <span class="sobrenome">Fazano</span></h1>
+                    <h2 data-reveal>
+                        <span class="typing" id="typing"></span><span class="cursor-blink">|</span>
+                    </h2>
+                    <p data-reveal>
+                        Estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior,
+                        apaixonado por tecnologia e desenvolvimento de software.
                     </p>
 
-                    <div class="botoes">
-                        <a href="#" class="btn github"><img src="img/github (1).png" alt="github"></a>
-                        <a href="#" class="btn site">Ver Projeto</a>
+                    <div class="hero-btns" data-reveal>
+                        <a href="#projetos" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> Ver projetos
+                        </a>
+                        <a href="curriculo/curriculo-vitor-fazano.pdf" download class="btn btn-ghost">
+                            <i class="fa-solid fa-download"></i> Baixar CV
+                        </a>
+                    </div>
+
+                    <div class="hero-social" data-reveal>
+                        <a href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/vfazano" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="mailto:vfazano09032007@gmail.com" aria-label="E-mail"><i
+                                class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
-            </div>
 
-            <div class="card-projeto">
-                <div class="card-img"></div>
-
-                <div class="card-info">
-                    <h3>Nome do Projeto</h3>
-                    <p>
-                        Pequena descrição do seu projeto. Fale o que ele faz, tecnologias usadas e objetivo.
-                    </p>
-
-                    <div class="botoes">
-                        <a href="#" class="btn github"><img src="img/github (1).png" alt="github"></a>
-                        <a href="#" class="btn site">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-projeto">
-                <div class="card-img"></div>
-
-                <div class="card-info">
-                    <h3>Nome do Projeto</h3>
-                    <p>
-                        Pequena descrição do seu projeto. Fale o que ele faz, tecnologias usadas e objetivo.
-                    </p>
-
-                    <div class="botoes">
-                        <a href="#" class="btn github"><img src="img/github (1).png" alt="github"></a>
-                        <a href="#" class="btn site">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-projeto">
-                <div class="card-img"></div>
-
-                <div class="card-info">
-                    <h3>Nome do Projeto</h3>
-                    <p>
-                        Pequena descrição do seu projeto. Fale o que ele faz, tecnologias usadas e objetivo.
-                    </p>
-
-                    <div class="botoes">
-                        <a href="#" class="btn github"><img src="img/github (1).png" alt="github"></a>
-                        <a href="#" class="btn site">Ver Projeto</a>
-                    </div>
+                <div class="foto" data-reveal>
+                    <div class="foto-glow"></div>
+                    <img class="img-move" src="img/Desenho_Fazanosf.png" alt="Ilustração de Vitor Fazano">
                 </div>
             </div>
 
-
-
-        </div>
-
-
-
-    </section>
-
-    <section class="habilidades" id="habilidades">
-
-        <h1 class="titulo-habilidade">Habilidades</h1>
-
-        <div class="skills">
-
-            <div class="skillJava">
-                <img src="img/java.png" alt="Java">
-                <p>Java</p>
-            </div>
-
-            <div class="skillPython">
-                <img src="img/python (1).png" alt="Python">
-                <p>Python</p>
-            </div>
-            <div class="skillHtml">
-                <img src="img/html-5.png" alt="Html">
-                <p>HTML</p>
-            </div>
-            <div class="skillCss">
-                <img src="img/css-3 (1).png" alt="Css">
-                <p>CSS</p>
-            </div>
-            <div class="skillJavaScrip">
-                <img src="img/java-script.png" alt="JavaScript">
-                <P>JavaScript</P>
-            </div>
-            <div class="skillSql">
-                <img src="img/sql-server.png" alt="SQL">
-                <p>SQL</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="formacao" id="formacao">
-
-        <h1 class="titulo-formacao">
-            Formação
-        </h1>
-
-        <div class="container-formacao">
-            <div class="img-formacao">
-                <img class="img-senai" src="img/Entrada do SENAI em dia claro.png" alt="SENAI">
-
-                <div class="decricao-formacao">
-                    <p>Análise e Desenvolvimento de Sistemas SENAI Gaspar Ricardo Júnior</p>
-                    <p>Cursando</p>
-                </div>
-
-            </div>
-
-            <div class="img-fazano-senai">
-                <img src="img/Jovem_sorrindo_com_uniforme_SENAI-removebg-preview.png" alt="img-fazano-senai">
-            </div>
-
-
-
-
-
-        </div>
-
-
-    </section>
-    <section id="curriculo" class="curriculo">
-        <h1 class="titulo-curriculo">Meu <span>Currículo</span></h1>
-
-        <div class="curriculo-container">
-
-            <div class="curriculo-box">
-                <iframe src="curriculo/curriculo_vitor_fazanoZF (1)_compressed (1)_compressed.pdf"></iframe>
-            </div>
-
-            <div class="acoes-curriculo">
-                <a href="curriculo/curriculo_vitor_fazanoZF (1)_compressed (1)_compressed.pdf" target="_blank" class="btn-ver">
-                 TELA CHEIA 
+            <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+                <i class="fa-solid fa-chevron-down"></i>
             </a>
+        </section>
 
-                <a href="curriculo/curriculo_vitor_fazanoZF (1)_compressed (1)_compressed.pdf" download class="btn-download">
-                ⬇️ 
-            </a>
+        <!-- ============ SOBRE ============ -->
+        <section id="sobre" class="sobre section">
+            <div class="container">
+                <p class="section-tag" data-reveal>01 — Sobre</p>
+                <h2 class="section-title" data-reveal>Quem é o <span>Vitor</span></h2>
+
+                <div class="sobre-grid">
+                    <div class="img-sobre" data-reveal>
+                        <img class="img-move2" src="img/desenho_fazano2.png" alt="Ilustração de Vitor programando" loading="lazy">
+                    </div>
+
+                    <div class="sobre-conteudo" data-reveal>
+                        <p class="descricao">
+                            Meu nome é <strong>Vitor Fazano</strong> e atualmente curso Análise e Desenvolvimento de
+                            Sistemas no SENAI Gaspar Ricardo Júnior. Estou em constante aprendizado na área de
+                            programação, desenvolvendo habilidades em Java, Python, HTML, CSS, JavaScript e SQL.
+                            Busco uma oportunidade de estágio para aplicar meus conhecimentos, ganhar experiência
+                            prática e evoluir como desenvolvedor.
+                        </p>
+
+                        <div class="info-cards">
+                            <div class="info-card">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h4>Status</h4>
+                                <p>Buscando estágio</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <h4>Localização</h4>
+                                <p>Sorocaba, Brasil</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h4>Formação</h4>
+                                <p>ADS — SENAI</p>
+                            </div>
+                            <div class="info-card">
+                                <i class="fa-solid fa-language"></i>
+                                <h4>Idiomas</h4>
+                                <p>Português / Inglês básico</p>
+                            </div>
+                        </div>
+
+                        <div class="stats">
+                            <div class="stat"><span class="stat-num" data-count="6">0</span><small>tecnologias</small>
+                            </div>
+                            <div class="stat"><span class="stat-num" data-count="4">0</span><small>projetos</small>
+                            </div>
+                            <div class="stat"><span class="stat-num" data-count="100"
+                                    data-suffix="%">0</span><small>dedicação</small></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- ============ PROJETOS ============ -->
+        <section id="projetos" class="projetos section">
+            <div class="container">
+                <p class="section-tag" data-reveal>02 — Portfólio</p>
+                <h2 class="section-title" data-reveal>Meus <span>Projetos</span></h2>
 
+                <div class="filtros" data-reveal>
+                    <button class="filtro ativo" data-filtro="todos">Todos</button>
+                    <button class="filtro" data-filtro="web">Web</button>
+                    <button class="filtro" data-filtro="java">Java</button>
+                    <button class="filtro" data-filtro="python">Python</button>
+                </div>
 
+                <div class="container-projetos" id="gridProjetos">
+                    <article class="card-projeto" data-cat="web" data-reveal>
+                        <div class="card-img" style="background-image:url('img/foto_portifolio.png')">
+                            <span class="card-badge">Web</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Portfólio Pessoal</h3>
+                            <p>Site responsivo desenvolvido do zero com HTML, CSS e JavaScript, com tema claro/escuro,
+                                animações ao rolar e layout mobile-first.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="botoes">
+                                <a href="https://github.com/vfazano/Portifolio-Fazano" class="btn-card github"
+                                    target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </article>
 
+                    <article class="card-projeto" data-cat="java" data-reveal>
+                        <div class="card-img" style="background-image:url('img/foto_java.png')">
+                            <span class="card-badge">Java</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Sistema de Cadastro</h3>
+                            <p>Aplicação Java com CRUD completo e persistência em banco de dados relacional, aplicando
+                                POO e boas práticas de organização em camadas.</p>
+                            <div class="tags"><span>Java</span><span>MySQL</span><span>POO</span></div>
+                            <div class="botoes">
+                                <a href="#" class="btn-card github" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto" data-cat="web" data-reveal>
+                        <div class="card-img" style="background-image:url('img/jogo_web.png')">
+                            <span class="card-badge">Web</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Jogo Web</h3>
+                            <p>Jogo feito para o navegador com HTML, CSS e JavaScript, trabalhando manipulação do DOM,
+                                eventos de teclado e lógica de pontuação.</p>
+                            <div class="tags"><span>JavaScript</span><span>DOM</span><span>Canvas</span></div>
+                            <div class="botoes">
+                                <a href="#" class="btn-card github" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card-projeto" data-cat="python" data-reveal>
+                        <div class="card-img" style="background-image:url('img/projeto-python.svg')">
+                            <span class="card-badge">Python</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>Automação com Python</h3>
+                            <p>Script de automação que lê planilhas, trata os dados e gera relatórios automaticamente,
+                                economizando tarefas repetitivas.</p>
+                            <div class="tags"><span>Python</span><span>Pandas</span><span>Automação</span></div>
+                            <div class="botoes">
+                                <a href="#" class="btn-card github" target="_blank" rel="noopener"><i
+                                        class="fa-brands fa-github"></i> Código</a>
+                                <a href="#" class="btn-card site" target="_blank" rel="noopener">Ver projeto <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ HABILIDADES ============ -->
+        <section id="habilidades" class="habilidades section">
+            <div class="container">
+                <p class="section-tag" data-reveal>03 — Stack</p>
+                <h2 class="section-title" data-reveal>Minhas <span>Habilidades</span></h2>
+
+                <div class="skills">
+                    <div class="skill" data-reveal style="--skill:#f89820">
+                        <img src="img/java.png" alt="Java" loading="lazy">
+                        <h4>Java</h4>
+                        <div class="bar"><span data-level="70"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#4b8bbe">
+                        <img src="img/python (1).png" alt="Python" loading="lazy">
+                        <h4>Python</h4>
+                        <div class="bar"><span data-level="65"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#e34f26">
+                        <img src="img/html-5.png" alt="HTML5" loading="lazy">
+                        <h4>HTML5</h4>
+                        <div class="bar"><span data-level="90"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#2965f1">
+                        <img src="img/css-3 (1).png" alt="CSS3" loading="lazy">
+                        <h4>CSS3</h4>
+                        <div class="bar"><span data-level="85"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#f0db4f">
+                        <img src="img/java-script.png" alt="JavaScript" loading="lazy">
+                        <h4>JavaScript</h4>
+                        <div class="bar"><span data-level="70"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#00758f">
+                        <img src="img/sql-server.png" alt="SQL" loading="lazy">
+                        <h4>SQL</h4>
+                        <div class="bar"><span data-level="75"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#f34f29">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git &amp; GitHub</h4>
+                        <div class="bar"><span data-level="70"></span></div>
+                    </div>
+                    <div class="skill" data-reveal style="--skill:#a36d5c">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <h4>Trabalho em equipe</h4>
+                        <div class="bar"><span data-level="95"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FORMAÇÃO ============ -->
+        <section id="formacao" class="formacao section">
+            <div class="container">
+                <p class="section-tag" data-reveal>04 — Trajetória</p>
+                <h2 class="section-title" data-reveal>Minha <span>Formação</span></h2>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="periodo">Cursando</span>
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <h4>SENAI Gaspar Ricardo Júnior</h4>
+                            <p>Lógica de programação, POO com Java, bancos de dados relacionais, desenvolvimento web
+                                e engenharia de software.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="periodo">Estudos contínuos</span>
+                            <h3>Desenvolvimento Web Front-end</h3>
+                            <h4>Autodidata / cursos online</h4>
+                            <p>HTML semântico, CSS moderno (Flexbox, Grid, animações), JavaScript e versionamento
+                                com Git.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="periodo">Próximo passo</span>
+                            <h3>Estágio em Desenvolvimento</h3>
+                            <h4>Aberto a oportunidades</h4>
+                            <p>Pronto para aplicar meus conhecimentos em um time e evoluir com projetos reais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formacao-img" data-reveal>
+                    <img src="img/Entrada do SENAI em dia claro.png" alt="SENAI Gaspar Ricardo Júnior" loading="lazy">
+                    <img class="formacao-aluno" src="img/Jovem_sorrindo_com_uniforme_SENAI-removebg-preview.png"
+                        alt="Vitor com o uniforme do SENAI" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CURRÍCULO ============ -->
+        <section id="curriculo" class="curriculo section">
+            <div class="container">
+                <p class="section-tag" data-reveal>05 — Currículo</p>
+                <h2 class="section-title" data-reveal>Meu <span>Currículo</span></h2>
+
+                <div class="curriculo-container">
+                    <div class="curriculo-box" data-reveal>
+                        <iframe src="curriculo/curriculo-vitor-fazano.pdf" title="Currículo de Vitor Fazano"
+                            loading="lazy"></iframe>
+                    </div>
+
+                    <div class="acoes-curriculo" data-reveal>
+                        <a href="curriculo/curriculo-vitor-fazano.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+                            <i class="fa-solid fa-expand"></i> Tela cheia
+                        </a>
+                        <a href="curriculo/curriculo-vitor-fazano.pdf" download class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTATO ============ -->
+        <section id="contato" class="contato section">
+            <div class="container">
+                <p class="section-tag" data-reveal>06 — Contato</p>
+                <h2 class="section-title" data-reveal>Vamos <span>conversar?</span></h2>
+                <p class="section-sub" data-reveal>Estou disponível para estágio e aberto a novos desafios.</p>
+
+                <div class="contato-grid">
+                    <div class="contato-info" data-reveal>
+                        <a class="contato-item" href="mailto:vfazano09032007@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div><h4>E-mail</h4><p>vfazano09032007@gmail.com</p></div>
+                        </a>
+                        <a class="contato-item" href="https://www.linkedin.com/in/vitorfazan0/" target="_blank"
+                            rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div><h4>LinkedIn</h4><p>/in/vitorfazan0</p></div>
+                        </a>
+                        <a class="contato-item" href="https://github.com/vfazano" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                            <div><h4>GitHub</h4><p>/vfazano</p></div>
+                        </a>
+                        <div class="contato-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div><h4>Localização</h4><p>Sorocaba — SP, Brasil</p></div>
+                        </div>
+                    </div>
+
+                    <form class="contato-form" id="contatoForm" novalidate data-reveal>
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            <small class="erro"></small>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                            <small class="erro"></small>
+                        </div>
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."
+                                required></textarea>
+                            <small class="erro"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                        <p class="form-feedback" id="formFeedback"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
+        <div class="container">
+            <div class="footer-top">
+                <a href="#inicio" class="logo">
+                    <span class="logo-mark"><img src="img/codigo (1).png" alt="Logo Vitor Fazano"></span>
+                    <span class="logo-text">Vitor<strong>Fazano</strong></span>
+                </a>
 
-    <nav class="footer-menu">
-        <a href="#">Home</a>
-        <a href="#">Produtos</a>
-        <a href="#">Serviços</a>
-        <a href="#">Sobre Nós</a>
-        <a href="#">Contato</a>
-    </nav>
+                <nav class="footer-menu">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#curriculo">Currículo</a>
+                    <a href="#contato">Contato</a>
+                </nav>
 
-    <div class="footer-bottom">
-        <p>© 2025 Seu Projeto. Todos os direitos reservados.</p>
-    </div>
-</footer>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/vfazano" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:vfazano09032007@gmail.com" aria-label="E-mail"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <div class="footer-bottom">
+                <p>© <span id="ano"></span> Vitor Fazano. Feito com <i class="fa-solid fa-heart"></i> e muito café.</p>
+            </div>
+        </div>
+    </footer>
 
+    <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
 </body>
-
 
 </html>
