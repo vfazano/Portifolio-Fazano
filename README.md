@@ -1,4 +1,4 @@
-{`<div align="center">
+<div align="center">
 
 # 🚀 Portfólio Fazano v2.0.0
 
