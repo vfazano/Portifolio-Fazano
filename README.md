@@ -28,9 +28,7 @@ O **Portfólio Fazano v2.0** foi desenvolvido para apresentar minhas habilidades
 
 A aplicação foi construída **sem frameworks**, utilizando apenas tecnologias nativas da web, priorizando performance, responsividade e uma excelente experiência para o usuário.
 
-### 🎥 Demonstração
 
-> Coloque um GIF do seu site em \`assets/demo.gif\`
 
 <div align="center">
   <img src="./assets/demo.gif" width="100%" alt="Demonstração do Portfólio"/>
