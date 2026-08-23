@@ -27,7 +27,7 @@
 O **Portfólio Fazano v2.0** foi desenvolvido para apresentar minhas habilidades, projetos, formação e currículo de forma moderna e intuitiva.
 
 A aplicação foi construída **sem frameworks**, utilizando apenas tecnologias nativas da web, priorizando performance, responsividade e uma excelente experiência para o usuário.
-<a href="wiki.html">Documentação</a>
+
 
 
 
@@ -36,6 +36,11 @@ A aplicação foi construída **sem frameworks**, utilizando apenas tecnologias 
 </div>
 
 ---
+## Documentação
+
+A documentação completa do projeto está disponível no Wiki do GitHub.
+
+[📚 Acessar a documentação do projeto](https://github.com/vfazano/Portifolio-Fazano/wiki)
 
 ## 🛠 Tecnologias utilizadas
 
