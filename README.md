@@ -42,6 +42,8 @@ A documentação completa do projeto está disponível no Wiki do GitHub.
 
 [📚 Acessar a documentação do projeto](https://github.com/vfazano/Portifolio-Fazano/wiki)
 
+---
+
 ## 🛠 Tecnologias utilizadas
 
 <div align="center">
