@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Vitor Fazano — Desenvolvedor de Software e estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior.">
+    <meta name="author" content="Vitor Fazano">
+    <meta property="og:title" content="Vitor Fazano | Software Developer">
+    <meta property="og:description" content="Portfólio de projetos, habilidades e currículo de Vitor Fazano.">
+    <meta property="og:type" content="website">
+    <title>Vitor Fazano | Software Developer</title>
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..800&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- barra de progresso de rolagem -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="logo" aria-label="Início">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span class="logo-text">Vitor<strong>Fazano</strong></span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#formacao" class="nav-link">Formação</a></li>
+                <li><a href="#curriculo" class="nav-link">Currículo</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============ INÍCIO ============ -->
+        <section id="inicio" class="inicio">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+
+            <div class="container inicio-grid">
+                <div class="texto">
+                    <span class="status" data-reveal>
+                        <span class="status-dot"></span> BUSCANDO PRIMEIRA OPORTUNIDADE
+                    </span>
+                    <h3 data-reveal>BEM-VINDO AO MEU WORKSPACE</h3>
+                    <h1 data-reveal>Vitor <span class="sobrenome">Fazano</span></h1>
+                    <h2 data-reveal>
+                        <span class="typing" id="typing"></span><span class="cursor-blink">|</span>
+                    </h2>
+                    <p data-reveal>
+                        Estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior, apaixonado por tecnologia e desenvolvimento de software.
+                    </p>
+
+                    <div class="hero-btns" data-reveal>
+                        <a href="#projetos" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> Ver projetos
+                        </a>
+                        <a href="./curriculo/VitorFazano_Currículo9.pdf" download class="btn btn-ghost">
+                            <i class="fa-solid fa-download"></i> Baixar CV
+                        </a>
+                    </div>
+
+                    <div class="hero-social" data-reveal>
+                        <a href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/vfazano" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="mailto:vfazano09032007@gmail.com" aria-label="E-mail"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="foto" data-reveal>
+                    <div class="foto-glow"></div>
+
+                    <img class="img-move" src="img/Desenho_Fazanosf.png" alt="Ilustração de Vitor Fazano">
+                </div>
+            </div>
+
+            <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ============ SOBRE ============ -->
+        <section id="sobre" class="sobre section">
+            <div class="container">
+                <p class="section-tag" data-reveal>01 — Sobre</p>
+                <h2 class="section-title" data-reveal>Quem é o <span>Vitor</span></h2>
+
+                <div class="sobre-grid">
+                    <div class="img-sobre" data-reveal>
+                        <img class="img-move2" src="img/desenho_fazano2.png" alt="Ilustração de Vitor programando" loading="lazy">
+                    </div>
+
+                    <div class="sobre-conteudo" data-reveal>
+                        <p class="descricao">
+                            Meu nome é <strong>Vitor Fazano</strong> e sou estudante de Análise e Desenvolvimento de Sistemas no SENAI Gaspar Ricardo Júnior. Venho construindo minha trajetória na área de tecnologia por meio da faculdade, estudos contínuos
+                            e projetos práticos, com foco em me desenvolver como profissional Full Stack. Tenho experiência acadêmica e prática com Java, JavaScript, Python, React, Vue.js, Next.js, Node.js, HTML, CSS e SQL, além de estar aprofundando
+                            meus conhecimentos em APIs, frameworks, bancos de dados e integração de sistemas. Também venho explorando AWS, Cloud Computing, DevOps e fundamentos de Cybersecurity, buscando ampliar minha visão sobre desenvolvimento, infraestrutura
+                            e segurança. Atualmente, procuro uma oportunidade de estágio em TI onde possa aplicar meus conhecimentos, aprender com desafios reais e contribuir para a equipe enquanto continuo evoluindo como desenvolvedor.
+                        </p>
+
+                        <div class="info-cards">
+
+                            <div class="info-card">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <h4>Status</h4>
+                                <p>Buscando estágio em TI</p>
+                            </div>
+
+                            <div class="info-card">
+                                <i class="fa-solid fa-code"></i>
+                                <h4>Foco</h4>
+                                <p>Full Stack & Back-End</p>
+                            </div>
+
+                            <div class="info-card">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <h4>Formação</h4>
+                                <p>ADS — SENAI</p>
+                            </div>
+
+                            <div class="info-card">
+                                <i class="fa-solid fa-cloud"></i>
+                                <h4>Explorando</h4>
+                                <p>AWS • DevOps • Cybersecurity</p>
+                            </div>
+
+                        </div>
+                        <div class="stats">
+
+                            <div class="stat">
+                                <span class="stat-num" data-count="20" data-suffix="+">0</span>
+                                <small>projetos</small>
+                            </div>
+
+                            <div class="stat">
+                                <span class="stat-num" data-count="10" data-suffix="+">0</span>
+                                <small>tecnologias</small>
+                            </div>
+
+                            <div class="stat">
+                                <span class="stat-num" data-count="3" data-suffix="+">0</span>
+                                <small>frameworks</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJETOS ============ -->
+        <section id="projetos" class="projetos section">
+            <div class="container">
+
+                <p class="section-tag" data-reveal>02 — Portfólio</p>
+
+                <h2 class="section-title" data-reveal>
+                    Meus <span>Projetos</span>
+                </h2>
+
+                <div class="filtros" data-reveal>
+                    <button class="filtro ativo" data-filtro="todos">
+                Todos
+            </button>
+
+                    <button class="filtro" data-filtro="fullstack">
+                Full Stack
+            </button>
+
+                    <button class="filtro" data-filtro="frontend">
+                Front-end
+            </button>
+
+                    <button class="filtro" data-filtro="academico">
+                Acadêmico
+            </button>
+                </div>
+
+                <!-- ============ Projeto SENAI-Gaspar-Ricardo-Junior ============ -->
+                <div class="container-projetos" id="gridProjetos">
+                    <article class="card-projeto" data-cat="web" data-reveal>
+
+                        <div class="card-img" style="background-image:url('/Portifolio-Fazano/PortifolioFazano/img/UniSenai.png')">
+                            <span class="card-badge">Em andamento</span>
+                        </div>
+
+                        <div class="card-info">
+
+                            <h3>Projeto SENAI — Sistema em Desenvolvimento</h3>
+
+                            <p>
+                                Projeto acadêmico de grande escala desenvolvido em equipe com aproximadamente 30 estudantes, com evolução prevista ao longo da graduação. A iniciativa tem como objetivo desenvolver uma solução que possa permanecer e ser utilizada pela rede SENAI, tornando
+                                o projeto uma experiência prática de longo prazo em desenvolvimento de software e trabalho colaborativo.
+                            </p>
+
+                            <div class="tags">
+                                <span>Projeto acadêmico</span>
+                                <span>30+ alunos</span>
+                                <span>Em andamento</span>
+                                <span>Trabalho em equipe</span>
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="https://github.com/UniSENAI-Sorocaba" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================================================= -->
+                    <!-- PROJETO 1 — DILLY SPORTS -->
+                    <!-- ================================================= -->
+
+                    <article class="card-projeto" data-cat="academico" data-reveal>
+
+                        <div class="card-img" style="background-image: url('/Portifolio-Fazano/PortifolioFazano/img/SGMprojeto.png')">
+                            <span class="card-badge">
+                        Acadêmico
+                    </span>
+                        </div>
+
+                        <div class="card-info">
+
+                            <h3>
+                                Sistema de Gerenciamento de Manutenção
+                            </h3>
+
+                            <p>
+                                Projeto Integrador desenvolvido no 1º semestre de Análise e Desenvolvimento de Sistemas para solucionar problemas de gerenciamento de manutenção industrial. O sistema digitaliza o fluxo de Ordens de Serviço, permitindo controle de chamados, técnicos,
+                                materiais, equipamentos e histórico de manutenções.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                                <span>Em andamento</span>
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="#" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================================= -->
+                    <!-- PROJETO 2 — ADEGA DO TIO PHILL -->
+                    <!-- ================================================= -->
+
+                    <article class="card-projeto" data-cat="fullstack" data-reveal>
+
+                        <div class="card-img" style="background-image: url('/Portifolio-Fazano/PortifolioFazano/img/adega\ tio.png')">
+                            <span class="card-badge">
+                        Full Stack
+                    </span>
+                        </div>
+
+                        <div class="card-info">
+
+                            <h3>
+                                Adega do Tio Phill
+                            </h3>
+
+                            <p>
+                                Projeto em desenvolvimento para uma adega local, criado para oferecer uma presença digital moderna e responsiva. A aplicação apresenta um catálogo de produtos, permite montar pedidos através de um carrinho e encaminhá-los diretamente pelo WhatsApp.
+                            </p>
+
+                            <div class="tags">
+                                <span>Vue.js</span>
+                                <span>JavaScript</span>
+                                <span>Vite</span>
+                                <span>CSS3</span>
+                                <span>WhatsApp</span>
+                                <span>Em andamento</span>
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="https://github.com/vfazano/Adega-do-Tio-Phill" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+                                <a href="https://adega-do-tio-phill-2yen.vercel.app" class="btn-card site" target="_blank" rel="noopener">
+                            Ver projeto
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card-projeto" data-cat="web" data-reveal>
+
+                        <div class="card-img" style="background-image: url('/Portifolio-Fazano/PortifolioFazano/img/image.png')">
+
+                            <span class="card-badge">
+                                 Web
+                            </span>
+
+                        </div>
+
+                        <div class="card-info">
+
+                            <h3>
+                                Site para Barbearia
+                            </h3>
+
+                            <p>
+                                Projeto desenvolvido para uma barbearia local, com o objetivo de criar uma presença digital moderna, responsiva e de fácil navegação. A aplicação apresenta os serviços da barbearia e utiliza JavaScript para permitir o contato e encaminhamento de informações
+                                diretamente pelo WhatsApp.
+                            </p>
+
+                            <div class="tags">
+
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>WhatsApp</span>
+                                <span>Responsivo</span>
+                                <span>Vercel</span>
+
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="https://github.com/vfazano/bryan-barber/tree/master" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+                                <a href="https://bryan-barber.vercel.app" class="btn-card site" target="_blank" rel="noopener">
+                                        Ver projeto
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================================= -->
+                    <!-- PROJETO 3 — LEAGUE OF LEGENDS QUIZ -->
+                    <!-- ================================================= -->
+
+                    <article class="card-projeto" data-cat="frontend" data-reveal>
+
+                        <div class="card-img" style="background-image: url('/Portifolio-Fazano/PortifolioFazano/img/Quiz\ legue.png')">
+                            <span class="card-badge">
+                        Front-end
+                    </span>
+                        </div>
+
+                        <div class="card-info">
+
+                            <h3>
+                                League of Legends Quiz
+                            </h3>
+
+                            <p>
+                                Quiz interativo inspirado no universo de League of Legends, desenvolvido para praticar React e TypeScript. A aplicação utiliza componentes, gerenciamento de estado, renderização dinâmica, validação de respostas e sistema de pontuação.
+                            </p>
+
+                            <div class="tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>JavaScript</span>
+                                <span>Vite</span>
+                                <span>CSS</span>
+                                <span>Em andamento</span>
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="https://github.com/vfazano/LeagueOfLegendsQuizPage" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+                                <a href="https://league-of-legends-quiz-page.vercel.app" class="btn-card site" target="_blank" rel="noopener">
+                            Ver projeto
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ================================================= -->
+                    <!-- PROJETO 4 — PORTFÓLIO -->
+                    <!-- ================================================= -->
+
+                    <article class="card-projeto" data-cat="frontend" data-reveal>
+
+                        <div class="card-img" style="background-image: url('/Portifolio-Fazano/PortifolioFazano/img/portifolioimg.png')">
+                            <span class="card-badge">
+                        Portfólio
+                    </span>
+                        </div>
+
+
+                        <div class="card-info">
+
+                            <h3>
+                                Portfólio Pessoal — Vitor Fazano
+                            </h3>
+
+                            <p>
+                                Portfólio pessoal desenvolvido para apresentar minha trajetória, formação, habilidades e projetos. A aplicação possui tema claro e escuro, animações, navegação responsiva, filtros de projetos, currículo integrado e formulário de contato.
+                            </p>
+
+                            <div class="tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Git</span>
+                                <span>GitHub</span>
+                                <span>Em andamento</span>
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="#" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+                                <a href="#" class="btn-card site" target="_blank" rel="noopener">
+                            Ver projeto
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <!-- ================================================= -->
+                    <!-- PROJETO 4 — SENAI GASPAR RICARDO JÚNIOR -->
+                    <!-- ================================================= -->
+
+                    <article class="card-projeto" data-cat="framework" data-reveal>
+
+                        <div class="card-img" style="background-image: url('/Portifolio-Fazano/PortifolioFazano/img/senai\ lage\ page\ projeto.png')">
+                            <span class="card-badge">
+            Next.js
+        </span>
+                        </div>
+
+                        <div class="card-info">
+
+                            <h3>
+                                Landing Page — SENAI Gaspar Ricardo Júnior
+                            </h3>
+
+                            <p>
+                                Landing Page institucional desenvolvida como projeto acadêmico, utilizando Next.js, React, TypeScript e Tailwind CSS. O projeto apresenta uma interface moderna e responsiva, com navegação, áreas de formação profissional, informações institucionais, contato
+                                e componentes reutilizáveis.
+                            </p>
+
+                            <div class="tags">
+                                <span>Next.js</span>
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Tailwind CSS</span>
+                                <span>Vite</span>
+
+                            </div>
+
+                            <div class="botoes">
+
+                                <a href="https://github.com/vfazano/SENAI-Gaspar-Ricardo-Junior-Projeto-Next.js" class="btn-card github" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i> Código
+                                </a>
+
+                                <a href="https://senai-gaspar-ricardo-junior-projeto.vercel.app" class="btn-card site" target="_blank" rel="noopener">
+                Ver projeto
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============ HABILIDADES ============ -->
+        <section id="habilidades" class="habilidades section">
+
+            <div class="container">
+
+                <p class="section-tag" data-reveal>
+                    03 — Stack
+                </p>
+
+                <h2 class="section-title" data-reveal>
+                    Minhas <span>Habilidades</span>
+                </h2>
+
+
+                <!-- ============================= -->
+                <!-- FRONT-END -->
+                <!-- ============================= -->
+
+                <h3 class="skill-category" data-reveal>
+                    <i class="fa-solid fa-display"></i> Front-End
+                </h3>
+
+                <div class="skills">
+
+                    <div class="skill" data-reveal style="--skill:#e34f26">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML5</h4>
+                        <div class="bar">
+                            <span data-level="90"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#2965f1">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS3</h4>
+                        <div class="bar">
+                            <span data-level="85"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#f0db4f">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>JavaScript</h4>
+                        <div class="bar">
+                            <span data-level="75"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#3178c6">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>TypeScript</h4>
+                        <div class="bar">
+                            <span data-level="60"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#61dafb">
+                        <i class="fa-brands fa-react"></i>
+                        <h4>React</h4>
+                        <div class="bar">
+                            <span data-level="65"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#42b883">
+                        <i class="fa-brands fa-vuejs"></i>
+                        <h4>Vue.js</h4>
+                        <div class="bar">
+                            <span data-level="65"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#000000">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Next.js</h4>
+                        <div class="bar">
+                            <span data-level="55"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#38bdf8">
+                        <i class="fa-solid fa-wind"></i>
+                        <h4>Tailwind CSS</h4>
+                        <div class="bar">
+                            <span data-level="60"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ============================= -->
+                <!-- BACK-END -->
+                <!-- ============================= -->
+
+                <h3 class="skill-category" data-reveal>
+                    <i class="fa-solid fa-server"></i> Back-End & APIs
+                </h3>
+
+                <div class="skills">
+
+                    <div class="skill" data-reveal style="--skill:#f89820">
+                        <i class="fa-brands fa-java"></i>
+                        <h4>Java</h4>
+                        <div class="bar">
+                            <span data-level="70"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#68a063">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h4>Node.js</h4>
+                        <div class="bar">
+                            <span data-level="60"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#ffffff">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Express</h4>
+                        <div class="bar">
+                            <span data-level="55"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#4b8bbe">
+                        <i class="fa-brands fa-python"></i>
+                        <h4>Python</h4>
+                        <div class="bar">
+                            <span data-level="65"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#00758f">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>SQL</h4>
+                        <div class="bar">
+                            <span data-level="75"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#f97316">
+                        <i class="fa-solid fa-plug"></i>
+                        <h4>APIs REST</h4>
+                        <div class="bar">
+                            <span data-level="50"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ============================= -->
+                <!-- DEVOPS / CLOUD -->
+                <!-- ============================= -->
+
+                <h3 class="skill-category" data-reveal>
+                    <i class="fa-solid fa-cloud"></i> Cloud & DevOps
+                </h3>
+
+                <div class="skills">
+
+                    <div class="skill" data-reveal style="--skill:#2496ed">
+                        <i class="fa-brands fa-docker"></i>
+                        <h4>Docker</h4>
+                        <div class="bar">
+                            <span data-level="55"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#ff9900">
+                        <i class="fa-brands fa-aws"></i>
+                        <h4>AWS</h4>
+                        <div class="bar">
+                            <span data-level="35"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#f97316">
+                        <i class="fa-solid fa-gears"></i>
+                        <h4>DevOps</h4>
+                        <div class="bar">
+                            <span data-level="35"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#f34f29">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git & GitHub</h4>
+                        <div class="bar">
+                            <span data-level="75"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ============================= -->
+                <!-- SEGURANÇA -->
+                <!-- ============================= -->
+
+                <h3 class="skill-category" data-reveal>
+                    <i class="fa-solid fa-shield-halved"></i> Cybersecurity
+                </h3>
+
+                <div class="skills">
+
+                    <div class="skill" data-reveal style="--skill:#ef4444">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Fundamentos de Segurança</h4>
+                        <div class="bar">
+                            <span data-level="35"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill" data-reveal style="--skill:#f97316">
+                        <i class="fa-solid fa-lock"></i>
+                        <h4>Segurança de Aplicações</h4>
+                        <div class="bar">
+                            <span data-level="30"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ============================= -->
+                <!-- SOFT SKILLS -->
+                <!-- ============================= -->
+
+                <h3 class="skill-category" data-reveal>
+                    <i class="fa-solid fa-user"></i> Competências
+                </h3>
+
+                <div class="competencias" data-reveal>
+
+                    <span>Trabalho em equipe</span>
+                    <span>Comunicação</span>
+                    <span>Aprendizado contínuo</span>
+                    <span>Resolução de problemas</span>
+                    <span>Organização</span>
+                    <span>Adaptabilidade</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ============ FORMAÇÃO ============ -->
+        <section id="formacao" class="formacao section">
+            <div class="container">
+                <p class="section-tag" data-reveal>04 — Trajetória</p>
+                <h2 class="section-title" data-reveal>Minha <span>Formação</span></h2>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="periodo">Cursando</span>
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <h4>SENAI Gaspar Ricardo Júnior</h4>
+                            <p>Lógica de programação, POO com Java, bancos de dados relacionais, desenvolvimento web e engenharia de software.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+                            <span class="periodo">Em aprendizado</span>
+
+                            <h3>Cloud Computing &amp; DevOps</h3>
+
+                            <h4>AWS / Estudos práticos</h4>
+
+                            <p>
+                                Explorando conceitos de Cloud Computing e infraestrutura, com estudos em AWS, serviços em nuvem, deploy de aplicações, automação, integração contínua e práticas de DevOps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+                            <span class="periodo">Em aprendizado</span>
+
+                            <h3>Cybersecurity &amp; Segurança de Aplicações</h3>
+
+                            <h4>Estudos contínuos</h4>
+
+                            <p>
+                                Estudando fundamentos de Cybersecurity, segurança de aplicações, autenticação e autorização, proteção de APIs, conceitos de redes e boas práticas para desenvolvimento de sistemas mais seguros.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="timeline-item" data-reveal>
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+                            <span class="periodo">Próximo passo</span>
+
+                            <h3>Primeira oportunidade em Tecnologia</h3>
+
+                            <h4>Buscando estágio em TI</h4>
+
+                            <p>
+                                Busco uma oportunidade para aplicar meus conhecimentos em desenvolvimento, APIs, bancos de dados e tecnologias de Cloud, contribuindo com a equipe enquanto continuo evoluindo profissionalmente.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+        </section>
+
+        <!-- ============ CURRÍCULO ============ -->
+        <section id="curriculo" class="curriculo section">
+            <div class="container">
+                <p class="section-tag" data-reveal>05 — Currículo</p>
+                <h2 class="section-title" data-reveal>Meu <span>Currículo</span></h2>
+
+                <div class="curriculo-container">
+                    <div class="curriculo-box" data-reveal>
+                        <iframe src="./curriculo/VitorFazano_Currículo9.pdf" title="Currículo de Vitor Fazano" loading="lazy">
+        </iframe>
+                    </div>
+
+                    <div class="acoes-curriculo" data-reveal>
+                        <a href="./curriculo/VitorFazano_Currículo9.pdf" target="_blank" rel="noopener" class="btn btn-ghost">
+                            <i class="fa-solid fa-expand"></i> Tela cheia
+                        </a>
+
+                        <a href="./curriculo/VitorFazano_Currículo9.pdf" download class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> Baixar PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTATO ============ -->
+        <section id="contato" class="contato section">
+            <div class="container">
+                <p class="section-tag" data-reveal>06 — Contato</p>
+                <h2 class="section-title" data-reveal>Vamos <span>conversar?</span></h2>
+                <p class="section-sub" data-reveal>Estou disponível para estágio e aberto a novos desafios.</p>
+
+                <div class="contato-grid">
+                    <div class="contato-info" data-reveal>
+                        <a class="contato-item" href="mailto:vfazanodev@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>vfazanodev@gmail.com</p>
+                            </div>
+                        </a>
+                        <a class="contato-item" href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>/in/vitorfazan0</p>
+                            </div>
+                        </a>
+                        <a class="contato-item" href="https://github.com/vfazano" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>/vfazano</p>
+                            </div>
+                        </a>
+                        <div class="contato-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Sorocaba — SP, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contato-form" id="contatoForm" novalidate data-reveal>
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            <small class="erro"></small>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                            <small class="erro"></small>
+                        </div>
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+                            <small class="erro"></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                        <p class="form-feedback" id="formFeedback"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#inicio" class="logo">
+                    <span class="logo-mark">&lt;/&gt;</span>
+                    <span class="logo-text">Vitor<strong>Fazano</strong></span>
+                </a>
+
+                <nav class="footer-menu">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#curriculo">Currículo</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vitorfazan0/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/vfazano" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:vfazanodev@.com" aria-label="E-mail"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="ano"></span> Vitor Fazano. Feito com <i class="fa-solid fa-heart"></i> e muito café.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
