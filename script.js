@@ -65,32 +65,43 @@ document.addEventListener('DOMContentLoaded', () => {
         links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${atual}`));
     }
 
-    /* ---------- EFEITO DE DIGITAÇÃO ---------- */
     const alvoTyping = document.getElementById('typing');
-    const frases = ['Software Developer', 'Estudante de ADS', 'Front-end & Java', 'Em busca de estágio em TI'];
-    let iFrase = 0,
-        iLetra = 0,
-        apagando = false;
+
+    const frases = [
+        'Software Developer',
+        'Estudante de ADS',
+        'Front-end & Java',
+        'Em busca de estágio em TI'
+    ];
+
+    let iFrase = 0;
+    let iLetra = 0;
+    let apagando = false;
 
     function digitar() {
         const frase = frases[iFrase];
+
         alvoTyping.textContent = frase.slice(0, iLetra);
 
         if (!apagando && iLetra < frase.length) {
             iLetra++;
             setTimeout(digitar, 90);
+
         } else if (!apagando) {
             apagando = true;
             setTimeout(digitar, 1800);
+
         } else if (iLetra > 0) {
             iLetra--;
             setTimeout(digitar, 45);
+
         } else {
             apagando = false;
             iFrase = (iFrase + 1) % frases.length;
             setTimeout(digitar, 300);
         }
     }
+
     digitar();
 
     /* ---------- REVELAR AO ROLAR ---------- */
