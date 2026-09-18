@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function marcarLinkAtivo() {
         const pos = window.scrollY + 120;
-        let atual = secoes[0] ? .id;
+        let atual = secoes[0] ?.id;
         secoes.forEach(sec => {
             if (pos >= sec.offsetTop) atual = sec.id;
         });
